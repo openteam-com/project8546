@@ -25,58 +25,20 @@ body
     position: relative
 
     .self_link
-      height: 122px
+      height: 130px
       left: -52px
       position: absolute
       text-indent: -9999px
       top: 0
-      width: 329px
+      width: 280px
 
-    .duma_sponsor, .edro_sponsor, .csi_sponsor, .alliance_sponsor, .zg_sponsor
-      float: right
-      height: 68px
-      margin-right: 5px
-
-      a
-        display: block
-        height: 68px
-        text-indent: -999999px
-
-    .duma_sponsor
-      background: transparent image-url('duma.png') no-repeat center top
-      width: 89px
-
-      a
-        width: 89px
-
-    .edro_sponsor
-      background: transparent image-url('edro.png') no-repeat center top
-      width: 48px
-
-      a
-        width: 48px
-
-    .csi_sponsor
-      background: transparent image-url('csi.png') no-repeat center top
-      width: 118px
-
-      a
-        width: 118px
-
-    .alliance_sponsor
-      background: transparent image-url('alliance.png') no-repeat center top
-      width: 95px
-
-      a
-        width: 95px
-
-    .zg_sponsor
-      background: transparent image-url('zg.png') no-repeat center top
-      width: 119px
-      margin-right: 0
-
-      a
-        width: 119px
+    .zg_link
+      height: 60px
+      position: absolute
+      right: 0
+      text-indent: -9999px
+      top: 0
+      width: 150px
 
   .navigation
     .links_wrapper
@@ -95,18 +57,19 @@ body
           height: 26px
           padding: 4px 15px
           text-align: center
-          color: #5a63ec
+          color: #747474
 
           &:first-child
             margin-right: 0
 
           &:hover
-            background-color: #3f3a7b
+            background-color: #747474
             color: white
+            text-decoration: none
 
       .selected
         a
-          background-color: #3f3a7b
+          background-color: #747474
           color: white
 
   .content_wrapper
@@ -116,7 +79,7 @@ body
     +box-sizing(border-box)
     width: 870px
     min-height: 200px
-    background-color: rgba(#101326, .85)
+    background-color: rgba(#000, .5)
     +border-radius(10px)
 
     .share_wrapper

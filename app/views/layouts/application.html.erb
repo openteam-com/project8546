@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Томские таланты</title>
+    <title>Проект №[8546]</title>
     <%= stylesheet_link_tag    'application', media: 'all' %>
     <%= javascript_include_tag 'application' %>
     <%= csrf_meta_tags %>
@@ -23,29 +23,15 @@
         </div>
       <% end %>
       <div class="sponsors">
-        <%= link_to 'Томские таланты', root_path, class: 'self_link' %>
-        <div class="zg_sponsor">
-          <%= link_to 'ЗнайГород', 'http://znaigorod.ru', target: '_blank' %>
-        </div>
-        <div class="alliance_sponsor">
-          <%= link_to 'Арс-Альянс', 'http://ars-alliance.ru', target: '_blank' %>
-        </div>
-        <div class="csi_sponsor">
-        </div>
-        <div class="edro_sponsor">
-          <%= link_to 'Единая Россия Томск','http://tomsk.er.ru/', target: '_blank' %>
-        </div>
-        <div class="duma_sponsor">
-          <%= link_to 'Дума города Томска','http://duma.admin.tomsk.ru/', target: '_blank' %>
-        </div>
+        <%= link_to 'Проект 8546', root_path, class: :self_link %>
+        <%= link_to 'ЗнайГород', 'http://znaigorod.ru', target: '_blank', class: :zg_link %>
       </div>
       <div class="navigation">
         <div class="links_wrapper">
-          <span class="<%= 'selected' if action_name == 'new' %>"><%= link_to 'ЗАЯВКА', new_proposal_path  %></span>
-          <span class="<%= 'selected' if action_name == 'show_conditions' %>"> <%= link_to 'УСЛОВИЯ УЧАСТИЯ', show_conditions_path %></span>
-          <span class="<%= 'selected' if action_name == 'about' %>"> <%= link_to 'О КОНКУРСЕ', about_path %></span>
-          <span class="<%= 'selected' if controller_name == 'participants' %>"><%= link_to 'УЧАСТНИКИ', participants_path  %></span>
-          <span class="<%= 'selected' if action_name == 'index' && controller_name == 'events' %>"> <%= link_to 'СОБЫТИЯ', root_path %></span>
+          <span class="<%= 'selected' if action_name == 'show_conditions' %>"> <%= link_to 'ТАЙНА ПРОЕКТА', show_conditions_path %></span>
+          <span class="<%= 'selected' if event_id == 3 %>"> <%= link_to 'ОРГАНИЗАТОРЫ', sponsors_path %></span>
+          <span class="<%= 'selected' if event_id == 2 %>"><%= link_to 'УЧАСТНИКИ', participants_path  %></span>
+          <span class="<%= 'selected' if event_id == 1 && controller_name == 'events' %>"> <%= link_to 'ДНЕВНИКИ ПРОЕКТА', root_path %></span>
         </div>
       </div>
       <div class="content_wrapper">

@@ -6,4 +6,8 @@ module EventsHelper
       end
     }
   end
+
+  def event_id
+    params[:event_id] || 1
+  end
 end
