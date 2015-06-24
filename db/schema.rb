@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141027050647) do
+ActiveRecord::Schema.define(version: 20141027033631) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -23,7 +23,7 @@ ActiveRecord::Schema.define(version: 20141027050647) do
     t.datetime "updated_at"
   end
 
-  create_table "participants", force: true do |t|
+  create_table "proposals", force: true do |t|
     t.string   "full_name"
     t.text     "description"
     t.string   "nomination"
@@ -31,21 +31,6 @@ ActiveRecord::Schema.define(version: 20141027050647) do
     t.string   "image_content_type"
     t.string   "image_file_size"
     t.text     "image_url"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "proposals", force: true do |t|
-    t.string   "performer"
-    t.text     "nomination"
-    t.text     "auditory"
-    t.integer  "age"
-    t.string   "address"
-    t.string   "phone"
-    t.string   "email"
-    t.string   "performance_name"
-    t.integer  "music"
-    t.boolean  "accept_terms"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
