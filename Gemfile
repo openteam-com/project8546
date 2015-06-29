@@ -17,7 +17,7 @@ group :default do
   gem 'russian'
   gem 'sass-rails', '~> 4.0.3'
   gem 'sidekiq'
-  gem 'simple_form'
+  gem 'simple_form', '3.0.2'
   gem 'uglifier', '>= 1.3.0'
   gem 'unicorn'
   gem 'sinatra'
