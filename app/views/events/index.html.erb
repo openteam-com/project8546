@@ -1,4 +1,4 @@
-<% cache("relations_#{@event.id}", :expires_in => 10.minutes) do %>
+<% cache("relations_#{event_id}", :expires_in => 10.minutes) do %>
   <div class="events">
     <ul class='posters'>
       <% @related_items.each do |key, value| %>
